@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Receita {
@@ -5,10 +6,9 @@ public class Receita {
     private Item produto;
     private List <Item> listaItem;
 
-    public Receita(int idReceita, Item produto, List<Item> listaItem) {
+    public Receita(int idReceita, Item produto) {
         this.idReceita = idReceita;
-        this.produto = produto;
-        this.listaItem = listaItem;
+        this.listaItem = new ArrayList<>();
     }
     public int getIdReceita() {
         return idReceita;

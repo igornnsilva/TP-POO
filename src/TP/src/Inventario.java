@@ -17,8 +17,9 @@ public class Inventario {
         this.receitasCriadas.add(receita);
     }
     public void listarItens() {
+        System.out.println("Lista de itens no inventário:");
         for(Item item: this.Itens){
-            System.out.printf("Nome %d: %s\n", item.getIdItem(), item.getNome());
+            System.out.printf("Item %d: %s\n", item.getIdItem(), item.getNome());
             System.out.printf("%s\n", item.getRaridade());
         }
     }
