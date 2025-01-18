@@ -11,6 +11,9 @@ public class Item {
         this.desbloqueado = desbloqueado;
         this.raridade = raridade;
     }
+    public Item(){
+
+    }
 
     public int getIdItem() {
         return idItem;

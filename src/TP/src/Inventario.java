@@ -10,13 +10,26 @@ public class Inventario {
         this.receitasCriadas = new ArrayList<>();
 
     }
-    public void adicionarItem(Item item) {
+
+    public List<Item> getItens() {
+        return Itens;
+    }
+
+    public void adicionarItem(int idItem, String nome, String nomeIcone, boolean desbloqueado, Raridade raridade) {
+        Item item = new Item(idItem, nome, nomeIcone, desbloqueado, raridade);
         this.Itens.add(item);
+    }
+
+    public void adicionarItemCraftado(Item craft){
+        this.Itens.add(craft);
     }
     public void adicionarReceita(Receita receita) {
         this.receitasCriadas.add(receita);
     }
     public void listarItens() {
+        if(this.Itens.isEmpty()){
+            System.out.println("Lista de itens vazia.");
+        }
         System.out.println("Lista de itens no inventário:");
         for(Item item: this.Itens){
             System.out.printf("Item %d: %s\n", item.getIdItem(), item.getNome());
@@ -24,5 +37,32 @@ public class Inventario {
         }
     }
 
+    //Colocar no Diagrama
+
+    public boolean verificaItem(int id){
+        for(Item item: Itens){
+            if(item.getIdItem() == id){
+                return true;
+            }
+        }
+        return false;
+    }
+    public void consumirItem(int id){
+        for(Item item : this.Itens){
+            if(item.getIdItem() == id){
+                this.Itens.remove(item);
+                return;
+            }
+        }
+    }
+    public Receita getReceita(int id){
+        for(Receita receita: receitasCriadas){
+            if(receita.getIdReceita() == id){
+                return receita;
+            }
+        }
+        System.out.println("Id da Receita invalida");
+        return null;
+    }
 
 }
