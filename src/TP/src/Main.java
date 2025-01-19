@@ -10,13 +10,17 @@ public class Main {
         inventario.adicionarReceita(Barro);
         inventario.listarItens();
 
+        Item porcaPolisuco = new Item(4, "Polisuco", "Polisuco", true, Raridade.Lendario);
+        Receita Polisuco = new Receita(2, porcaPolisuco, 5, 6);
+        inventario.adicionarReceita(Polisuco);
 
 
         //Teste Craft
         Mesa teste = new Mesa();
 
 
-        teste.craftarReceita(inventario.getReceita(1), inventario);
+        //teste.craftarReceita(inventario.getReceita(1), inventario);
+        teste.craftarReceita(inventario.getReceita(2), inventario);
         inventario.listarItens();
     }
 }

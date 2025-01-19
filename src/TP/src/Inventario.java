@@ -20,6 +20,8 @@ public class Inventario {
         this.Itens.add(item);
     }
 
+
+
     public void adicionarItemCraftado(Item craft){
         this.Itens.add(craft);
     }
