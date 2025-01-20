@@ -21,12 +21,8 @@ public class Inventario {
     }
 
 
-
     public void adicionarItemCraftado(Item craft){
         this.Itens.add(craft);
-    }
-    public void adicionarReceita(Receita receita) {
-        this.receitasCriadas.add(receita);
     }
     public void listarItens() {
         if(this.Itens.isEmpty()){
@@ -37,6 +33,15 @@ public class Inventario {
             System.out.printf("Item %d: %s\n", item.getIdItem(), item.getNome());
             System.out.printf("%s\n", item.getRaridade());
         }
+    }
+
+
+    public void adicionarReceita(Receita receita) {
+        this.receitasCriadas.add(receita);
+    }
+    public void criarReceitaInventario(int id, Item prod, int idP1, int idP2){
+        Receita temp = new Receita(id, prod, idP1, idP2);
+        adicionarReceita(temp);
     }
 
     //Colocar no Diagrama

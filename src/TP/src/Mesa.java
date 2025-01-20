@@ -24,6 +24,7 @@ public class Mesa {
             inventario.consumirItem(receita.getIdItem1());
             inventario.consumirItem(receita.getIdItem2());
             inventario.adicionarItemCraftado(this.itemFinal);
+            return;
         }
 
         System.out.println("Combinação de produtos não craftável.");

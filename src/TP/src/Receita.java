@@ -1,10 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Receita {
+public class Receita extends Item {
     private int idReceita;
     private Item produto;
     private int idItem1, idItem2;
+
+    public  Receita(){
+
+    }
 
     public Receita(int idReceita, Item produto, int id1, int id2) {
         this.idReceita = idReceita;

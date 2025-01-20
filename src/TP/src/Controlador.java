@@ -1,4 +1,7 @@
 public class Controlador {
+    public Controlador(){
+
+    }
 
     public Jogador criarJogador(int id, String nome){
         return new Jogador(id, nome);
