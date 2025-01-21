@@ -45,9 +45,9 @@ public class Mesa {
                 inventario.desboloquearItem(this.itemFinal.getIdItem());
                 return;
             }
-            this.itemFinal = null;
-            return;
+
         }
+        this.itemFinal = null;
     }
 
 
