@@ -1,3 +1,5 @@
+package principal;
+
 public class Controlador {
     public Controlador(){
 

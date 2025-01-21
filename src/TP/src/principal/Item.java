@@ -1,15 +1,19 @@
+package principal;
+
 public class Item {
     private int idItem;
     private String nome;
     private String nomeIcone;
     private boolean desbloqueado;
     private Raridade raridade;
-    public Item(int idItem, String nome, String nomeIcone, boolean desbloqueado, Raridade raridade) {
+    private int idReceita;
+    public Item(int idItem, String nome, String nomeIcone, boolean desbloqueado, Raridade raridade, int idReceita) {
         this.idItem = idItem;
         this.nome = nome;
         this.nomeIcone = nomeIcone;
         this.desbloqueado = desbloqueado;
         this.raridade = raridade;
+        this.idReceita = idReceita;
     }
     public Item(){
 
@@ -46,6 +50,11 @@ public class Item {
         this.raridade = raridade;
     }
 
+
+    public void listarItem(){
+        System.out.printf("Item %d: %s\n", this.idItem, this.nome);
+        System.out.printf("%s\n", this.raridade);
+    }
 
 
 }

@@ -1,3 +1,7 @@
+package principal;
+
+import java.util.List;
+
 public class Jogador {
     private int idJogador;
     private String nome;
@@ -9,6 +13,15 @@ public class Jogador {
         this.inventario = new Inventario();
     }
 
+    public Jogador(int id, String Nome, Inventario inv){
+        this.idJogador = id;
+        this.nome = Nome;
+        this.inventario = inv;
+    }
+
+    public void setListaItens(List<Item> itens){
+
+    }
     public void setIdJogador(int id){
         this.idJogador = id;
     }
@@ -24,9 +37,6 @@ public class Jogador {
     }
     public Inventario getInventario(){return this.inventario; };
 
-    public void adicionarItemNoInventario(int idItem, String nome, String nomeIcone, boolean desbloqueado, Raridade raridade){
-        this.inventario.adicionarItem(idItem, nome, nomeIcone, desbloqueado, raridade);
-    }
 
     public void adicionarReceitaNoInventario(Receita receita){
         inventario.adicionarReceita(receita);
