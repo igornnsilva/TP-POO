@@ -71,15 +71,7 @@ public class Main {
                 leitor.nextLine();
             } else if (com == 3) {
                 limparTela();
-                System.out.println("Digite o id da receita que deseja craftar:");
-                int id = leitor.nextInt();
-                leitor.nextLine();
 
-                if (jogador.getInventario().getReceita(id) == null) {
-                    System.out.println("Receita não encontrada.");
-                    delay(2000); // Aguardar 2 segundos antes de continuar
-                    continue;
-                }
 
                 System.out.println("Digite o Primeiro item:");
                 int idItem1 = leitor.nextInt();
@@ -88,17 +80,12 @@ public class Main {
                 int idItem2 = leitor.nextInt();
                 leitor.nextLine();
 
-                Craft.craftarReceitaTerminal(
-                        jogador.getInventario().getReceita(id),
-                        jogador.getInventario(),
-                        jogador.getInventario().getItem(idItem1),
-                        jogador.getInventario().getItem(idItem2)
-                );
+                Craft.craftItem(jogador.getInventario(), idItem1, idItem2);
                 System.out.println("Pressione Enter para continuar...");
                 try {
                     System.out.println("Item craftado: " + Craft.getItemFinal().getNome());
                 } catch (Exception NullPointerException) {
-                    System.out.println("Item não craftado.");
+                    System.out.println("Combinação de produtos não craftável.");
                 }
 
                 leitor.nextLine();

@@ -25,7 +25,9 @@ public class Inventario {
         this.Itens.add(item);
     }
 
-
+    public List <Receita> getReceitasCriadas(){
+        return this.receitasCriadas;
+    }
 
 
 
