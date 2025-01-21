@@ -38,7 +38,7 @@ public class Mesa {
             throw new IllegalArgumentException("Os parâmetros não podem ser nulos.");
         }
         for(Receita receita: inventario.getReceitasCriadas()){
-            if(receita.getIdItem1() == id1 && receita.getIdItem2() == id2){
+            if(receita.getIdItem1() == id1 && receita.getIdItem2() == id2 || (receita.getIdItem1() == id2 && receita.getIdItem2() == id1)){
                 this.itemFinal = inventario.getItem(receita.getIdProduto());
                 System.out.println("Craftando.....");
                 System.out.println("Craftado com sucesso!");
