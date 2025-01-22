@@ -8,20 +8,25 @@ public class Tela extends JFrame{
     JPanel mainPanel = new JPanel(cardLayout);
     JPanel inicial = new Inicial();
     JPanel principal = new Principal();
+    JPanel panelTrajetoria = new PanelTrajetoria();
 
     JButton btn1 = new JButton("Jogar");
-    JButton btn2 = new JButton("Va para inicial");
+    JButton btn2 = new JButton("Va para final");
+    JButton btn3 = new JButton("Va para inicial");
 
     public Tela() {
 
         btn1.setBounds((getGraphicsConfiguration().getBounds().width/2) - 70, (getGraphicsConfiguration().getBounds().height/2) + 150, 120, 20);
         btn2.setBounds((getGraphicsConfiguration().getBounds().width/2) - 70, (getGraphicsConfiguration().getBounds().height/2) + 150, 120, 20);
+        btn3.setBounds((getGraphicsConfiguration().getBounds().width/2) - 70, (getGraphicsConfiguration().getBounds().height/2) + 150, 120, 20);
         inicial.add(btn1);
         principal.add(btn2);
+        panelTrajetoria.add(btn3);
 
         //Paineis de telas: inicial e principal
         mainPanel.add(inicial, "inicial");
         mainPanel.add(principal, "principal");
+        mainPanel.add(panelTrajetoria, "trajetoria");
 
         this.setTitle("Tela"); //Nome para janela
         this.setDefaultCloseOperation(EXIT_ON_CLOSE); //Faz a janela fechar ao clicar no x
@@ -39,8 +44,13 @@ public class Tela extends JFrame{
         });
 
         btn2.addActionListener ((e) -> {
+            cardLayout.show(mainPanel, "trajetoria");
+        });
+
+        btn3.addActionListener ((e) -> {
             cardLayout.show(mainPanel, "inicial");
         });
+
 
         //Desativa o modo janela
         this.setResizable(false);

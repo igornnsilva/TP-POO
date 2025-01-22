@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75ffb560-d2db-47a8-b84c-c9dc972d95ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Images/final_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/icone1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/icone2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/icone3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/icone5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interface/PanelTrajetoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interface/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/TP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/Auxiliar/Inicializador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auxiliar/Inicializador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/Images/inicio_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Images/inicio_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/Images/inventario.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Images/inventario.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/Images/principal_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Images/principal_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/Interface/FrameTrajetoria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/Interface/Inicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Inicial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/Interface/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/Interface/Tela.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Tela.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/principal/Controlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Controlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/principal/Inventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Inventario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/principal/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/principal/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Jogador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/principal/Mesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Mesa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/principal/Raridade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Raridade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP/src/principal/Receita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Receita.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2rxrAcP1RaFuuyGTGxA4JJ465dx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Tela.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/lipec/OneDrive/Documentos/GitHub/TP-POO/src/Images",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lipec\OneDrive\Documentos\GitHub\TP-POO\src\Images" />
+      <recent name="C:\Users\lipec\OneDrive\Documentos\GitHub\TP-POO\src\Interface" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Tela">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="TP-POO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../../Program Files/Java/jdk-23" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tela" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interface.Tela" />
+      <module name="TP-POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TP-POO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TP-POO" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Tela" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Tela" />
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75ffb560-d2db-47a8-b84c-c9dc972d95ed" name="Changes" comment="" />
+      <created>1737511424547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737511424547</updated>
+    </task>
+    <servers />
+  </component>
+</project>
