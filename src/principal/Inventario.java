@@ -6,11 +6,12 @@ import java.util.List;
 public class Inventario {
     private List<Item> Itens;
     private List<Receita> receitasCriadas;
+    private List<Nivel> niveis;
 
     public Inventario() {
         this.Itens = new ArrayList<>();
         this.receitasCriadas = new ArrayList<>();
-
+        this.niveis = new ArrayList<>();
     }
     public Inventario(List<Item> lItem, List <Receita> lReceita){
         this.Itens = lItem;
@@ -29,6 +30,30 @@ public class Inventario {
         return this.receitasCriadas;
     }
 
+
+    public void adicionarNivel(Nivel nivel) {
+        this.niveis.add(nivel);
+    }
+
+    public void listarItensPorNivel(int nivel) {
+        for (Nivel n : niveis) {
+            if (n.getNumeroNivel() == nivel) {
+                n.listarItens();
+                return;
+            }
+        }
+        System.out.println("Nível " + nivel + " não encontrado.");
+    }
+
+    public void listarReceitasPorNivel(int nivel) {
+        for (Nivel n : niveis) {
+            if (n.getNumeroNivel() == nivel) {
+                n.listarReceitas();
+                return;
+            }
+        }
+        System.out.println("Nível " + nivel + " não encontrado.");
+    }
 
 
     public void listarItens() {

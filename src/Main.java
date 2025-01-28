@@ -3,7 +3,6 @@ import Auxiliar.Inicializador;
 import java.util.Scanner;
 
 public class Main {
-
     // Método para adicionar um atraso entre as mensagens
     public static void delay(long millis) {
         try {
@@ -36,8 +35,8 @@ public class Main {
         Inventario temp = new Inventario();
         Scanner leitor = new Scanner(System.in);
 
-        inicializador.inicializaItens(temp);
-        inicializador.inicializaReceitas(temp);
+        //inicializador.inicializaItens(temp);
+        //inicializador.inicializaReceitas(temp);
 
         int com = -1;
 
@@ -94,5 +93,6 @@ public class Main {
 
         limparTela();
         escreverComEfeito("Obrigado por jogar POOcraft! Até a próxima!", 50);
+
     }
 }
