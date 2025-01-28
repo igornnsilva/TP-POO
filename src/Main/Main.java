@@ -1,4 +1,7 @@
+/*package Main;
+
 import principal.*;
+import Interface.*;
 import Auxiliar.Inicializador;
 import java.util.Scanner;
 
@@ -30,6 +33,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        Tela janela = new Tela();
         Inicializador inicializador = new Inicializador();
         Controlador ctr = new Controlador();
         Mesa Craft = ctr.criarMesa();
@@ -90,9 +94,57 @@ public class Main {
 
                 leitor.nextLine();
             }
+
         }
 
         limparTela();
         escreverComEfeito("Obrigado por jogar POOcraft! Até a próxima!", 50);
+    }
+}*/
+
+package Main;
+
+import Interface.*;
+import principal.*;
+import principal.*;
+import Interface.*;
+import Auxiliar.Inicializador;
+
+import javax.swing.*;
+
+public class Main {
+    public static String nome = "";  // Nome do jogador
+    public static Jogador jogador;   // Instância do Jogador
+    private static Inicial inicial;  // Painel Inicial (para acessar o JTextField)
+    private static Principal principal;
+
+    Tela janela = new Tela();
+    private static Inicializador inicializador = new Inicializador();
+    private static Controlador ctr = new Controlador();
+    private static Mesa Craft = ctr.criarMesa();
+    private static Inventario temp = new Inventario();
+
+
+
+
+    public static void comecaJogo(String nome){
+        // Salva o nome na Main
+        Main.nome = nome;
+
+            // Cria um novo jogador
+        inicializador.inicializaItens(temp);
+        inicializador.inicializaReceitas(temp);
+        Main.jogador = new Jogador(1, nome, temp);
+
+        // Troca para o painel principal
+        System.out.println("Nome adicionado: " + nome);
+    }
+
+    public static void main(String[] args) {
+        // Inicializa a GUI com Tela
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            Tela janela = new Tela(); // Cria o JFrame Tela
+            inicial = (Inicial) janela.inicial; // Obtém o painel 'Inicial' da janela
+        });
     }
 }

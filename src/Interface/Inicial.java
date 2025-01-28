@@ -13,10 +13,10 @@ public class Inicial extends JPanel {
         // Carrega a imagem de fundo
         backgroundImage = new ImageIcon(getClass().getResource("/Images/inicio_background.png")).getImage();
 
-        // Define o layout como null para posicionamento absoluto
+        // Layout absoluto
         this.setLayout(null);
 
-        // Obtém o tamanho da tela atual
+        // Dimensões da tela
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int screenWidth = screenSize.width;
         int screenHeight = screenSize.height;
@@ -28,24 +28,35 @@ public class Inicial extends JPanel {
         titulo.setBounds((screenWidth - 250) / 2, (screenHeight / 2) - 250, 250, 150);
         this.add(titulo);
 
-        // Configuração do nome JLabel
+        // Configuração do JLabel "Nome:"
         nome = new JLabel("Nome:");
         nome.setFont(new Font("Arial", Font.PLAIN, 16));
         nome.setForeground(Color.white);
         nome.setBounds((screenWidth / 2) - 100, screenHeight / 2, 60, 25);
         this.add(nome);
 
-        // Configuração do campo de entrada de nome
+        // Configuração do campo de texto
         nomeCampo = new JTextField();
         nomeCampo.setBounds((screenWidth / 2) - 30, screenHeight / 2, 150, 25);
         this.add(nomeCampo);
     }
 
+    // Getter para obter o texto do JTextField
+    public String getNomeCampo() {
+        return nomeCampo.getText();
+    }
+
+    // Setter para alterar o texto do JTextField (opcional)
+    public void setNomeCampo(String nome) {
+        nomeCampo.setText(nome);
+    }
+
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
+
         // Desenha a imagem de fundo ajustada ao tamanho do painel
         g.drawImage(backgroundImage, 0, 0, getWidth(), getHeight(), this);
     }
-
 }
+

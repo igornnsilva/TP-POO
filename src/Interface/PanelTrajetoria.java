@@ -2,6 +2,7 @@ package Interface;
 
 import javax.swing.*;
 import java.awt.*;
+import Main.Main;
 
 public class PanelTrajetoria extends JPanel {
     private Image backgroundImage;
@@ -47,7 +48,7 @@ public class PanelTrajetoria extends JPanel {
         g.setColor(Color.WHITE);
         int textWidth = g.getFontMetrics().stringWidth("Fim de jogo!");
         int xPosition = (getWidth() - textWidth) / 2;
-        g.drawString("Fim de jogo!", xPosition, 100);
+        g.drawString("Parabéns " +Main.jogador.getNome()+ " você ganhou!", xPosition, 100);
         textWidth = g.getFontMetrics().stringWidth("Sua Trajetória foi:!");
         xPosition = (getWidth() - textWidth) / 2;
         g.drawString("Sua Trajetória foi:", xPosition, 150);

@@ -2,78 +2,75 @@ package Interface;
 
 import javax.swing.*;
 import java.awt.*;
+import Main.Main;
 
-public class Tela extends JFrame{
+public class Tela extends JFrame {
     CardLayout cardLayout = new CardLayout();
     JPanel mainPanel = new JPanel(cardLayout);
-    JPanel inicial = new Inicial();
-    JPanel principal = new Principal();
-    JPanel panelTrajetoria = new PanelTrajetoria();
+    public JPanel inicial = new Inicial();
+    public JPanel principal = new Principal();
+    public JPanel panelTrajetoria = new PanelTrajetoria();
 
     JButton btn1 = new JButton("Jogar");
     JButton btn2 = new JButton("Va para final");
     JButton btn3 = new JButton("Va para inicial");
 
     public Tela() {
+        // Configuração dos botões
+        btn1.setBounds((getGraphicsConfiguration().getBounds().width / 2) - 70,
+                (getGraphicsConfiguration().getBounds().height / 2) + 150,
+                120, 20);
+        btn2.setBounds((getGraphicsConfiguration().getBounds().width / 2) - 70,
+                (getGraphicsConfiguration().getBounds().height / 2) + 150,
+                120, 20);
+        btn3.setBounds((getGraphicsConfiguration().getBounds().width / 2) - 70,
+                (getGraphicsConfiguration().getBounds().height / 2) + 150,
+                120, 20);
 
-        btn1.setBounds((getGraphicsConfiguration().getBounds().width/2) - 70, (getGraphicsConfiguration().getBounds().height/2) + 150, 120, 20);
-        btn2.setBounds((getGraphicsConfiguration().getBounds().width/2) - 70, (getGraphicsConfiguration().getBounds().height/2) + 150, 120, 20);
-        btn3.setBounds((getGraphicsConfiguration().getBounds().width/2) - 70, (getGraphicsConfiguration().getBounds().height/2) + 150, 120, 20);
+        // Associa botão ao painel inicial
         inicial.add(btn1);
         principal.add(btn2);
         panelTrajetoria.add(btn3);
 
-        //Paineis de telas: inicial e principal
+        // Paineis principais (card layout)
         mainPanel.add(inicial, "inicial");
         mainPanel.add(principal, "principal");
         mainPanel.add(panelTrajetoria, "trajetoria");
 
-        this.setTitle("Tela"); //Nome para janela
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE); //Faz a janela fechar ao clicar no x
-
-        setLocationRelativeTo(null); //Inicializa janela centralizada
-        this.setExtendedState(MAXIMIZED_BOTH); //Inicializa janela em tela cheia
-
-
-        //Adiciona telas em um painel principal
+        // Configurações da janela
+        this.setTitle("Tela");
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null); // Centraliza janela
+        this.setExtendedState(MAXIMIZED_BOTH);
         this.add(mainPanel);
+        this.setResizable(false);
+        this.setVisible(true);
 
-        //Faz com que o botao leve para a outra tela
-        btn1.addActionListener ((e) -> {
-            cardLayout.show(mainPanel, "principal");
+        // Botão para salvar o nome e mudar de painel
+        btn1.addActionListener((e) -> {
+            // Obtém o texto do campo de texto no painel inicial
+            Inicial inicialPanel = (Inicial) inicial;
+            String nome = inicialPanel.getNomeCampo().trim();
+
+            if (!nome.isEmpty()) {
+                Main.comecaJogo(nome);
+                cardLayout.show(mainPanel, "principal");
+            } else {
+                // Mostra mensagem caso o nome esteja vazio
+                JOptionPane.showMessageDialog(this,
+                        "Por favor, insira um nome antes de começar!");
+            }
         });
 
-        btn2.addActionListener ((e) -> {
+
+
+        // Botões para outros painéis
+        btn2.addActionListener((e) -> {
             cardLayout.show(mainPanel, "trajetoria");
         });
 
-        btn3.addActionListener ((e) -> {
+        /*btn3.addActionListener((e) -> {
             cardLayout.show(mainPanel, "inicial");
-        });
-
-
-        //Desativa o modo janela
-        this.setResizable(false);
-
-        //Torna o conteudo da janela visivel
-        this.setVisible(true);
-
-
-
-        //int t = getGraphicsConfiguration().getBounds().width;
-        //System.out.println("Tamanho: " + t);
-
-
-        /*
-        botao.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(tabbedPane1.getSelectedIndex() < 2){
-                    tabbedPane1.setSelectedIndex(tabbedPane1.getSelectedIndex()+1);
-                }else{
-                    tabbedPane1.setSelectedIndex(0);
-                }
-            }
         });*/
     }
 
@@ -81,3 +78,4 @@ public class Tela extends JFrame{
         Tela janela = new Tela();
     }
 }
+
