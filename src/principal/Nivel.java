@@ -3,6 +3,8 @@ package principal;
 import java.util.ArrayList;
 import java.util.List;
 
+
+//Classe responsável por representar um nível do jogo, Listando itens e receitas
 public class Nivel {
     private int numeroNivel;
     private List<Item> itens;
@@ -35,6 +37,20 @@ public class Nivel {
     }
 
     public void listarItens() {
+        System.out.println("Itens do Nível " + numeroNivel + ":");
+        if (itens.isEmpty()) {
+            System.out.println("Nenhum item disponível neste nível.");
+        } else {
+            for (Item item : itens) {
+                if(item.isDesbloqueado()){
+                    System.out.printf("- %s (ID: %d, Raridade: %s)\n", item.getNome(), item.getIdItem(), item.getRaridade());
+                }
+
+            }
+        }
+    }
+
+    public void listarItensCadastrados() {
         System.out.println("Itens do Nível " + numeroNivel + ":");
         if (itens.isEmpty()) {
             System.out.println("Nenhum item disponível neste nível.");

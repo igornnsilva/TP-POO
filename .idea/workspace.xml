@@ -5,30 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75ffb560-d2db-47a8-b84c-c9dc972d95ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Auxiliar/Inicializador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Auxiliar/Inicializador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Inicial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Inicial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/PanelTrajetoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/PanelTrajetoria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Tela.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Tela.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/principal/Controlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/principal/Controlador.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP-POO/principal/Inventario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/principal/Inventario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/principal/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/principal/Item.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP-POO/principal/Jogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/principal/Jogador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/principal/Mesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/principal/Mesa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/principal/Raridade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/principal/Raridade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/principal/Receita.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/principal/Receita.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Auxiliar/Inicializador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auxiliar/Inicializador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Auxiliar/Main_Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auxiliar/Main_Teste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/principal/Inventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Inventario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/principal/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Jogador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/principal/Nivel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Nivel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

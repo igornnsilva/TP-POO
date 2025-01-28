@@ -3,7 +3,7 @@ package principal;
 import java.util.List;
 
 public class Jogador {
-    private int idJogador;
+    private int idJogador, nivelAtual;
     private String nome;
     private Inventario inventario;
 
@@ -11,12 +11,18 @@ public class Jogador {
         this.idJogador = id;
         this.nome = Nome;
         this.inventario = new Inventario();
+        this.nivelAtual = 1;
     }
 
     public Jogador(int id, String Nome, Inventario inv){
         this.idJogador = id;
         this.nome = Nome;
         this.inventario = inv;
+        this.nivelAtual = 1;
+    }
+
+    public int getNivelAtual(){
+        return this.nivelAtual;
     }
 
     public void setListaItens(List<Item> itens){
@@ -44,6 +50,12 @@ public class Jogador {
 
     public Receita getReceita(int id){
         return this.inventario.getReceita(id);
+    }
+
+    public void nivelAtualCompleto(){
+        if(inventario.verificarNivelCompleto(nivelAtual)){
+            this.nivelAtual++;
+        }
     }
 
 }

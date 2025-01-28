@@ -44,6 +44,18 @@ public class Inventario {
         }
         System.out.println("Nível " + nivel + " não encontrado.");
     }
+    public boolean verificarNivelCompleto(int nivel){
+        if (nivel < 1 || nivel > 4) {
+            throw new IllegalArgumentException("Nível deve estar entre 1 e 4.");
+        }
+        for(Item i: niveis.get(nivel-1).getItens()){
+            if(!i.isDesbloqueado()){
+                return false;
+            }
+        }
+
+        return true;
+    }
 
     public void listarReceitasPorNivel(int nivel) {
         for (Nivel n : niveis) {
@@ -62,7 +74,7 @@ public class Inventario {
         }
         System.out.println("Lista de itens no inventário:");
         for(Item item: this.Itens){
-            if(item.isDesbloqueado() == true){
+            if(item.isDesbloqueado()){
                 System.out.printf("Item %d: %s\n", item.getIdItem(), item.getNome());
                 System.out.printf("%s\n", item.getRaridade());
             }

@@ -17,8 +17,12 @@ public class Main_Teste {
         Jogador jogador = new Jogador(1, "Gabriel", temp);
 
         inicializador.inicializaNiveis(temp);
-        jogador.getInventario().listarItensPorNivel(3);
-        jogador.getInventario().listarReceitasPorNivel(3);
+        jogador.nivelAtualCompleto();
+
+
+        jogador.getInventario().listarItensPorNivel(jogador.getNivelAtual());
+        jogador.getInventario().listarReceitasPorNivel(1);
+
 
 
     }
