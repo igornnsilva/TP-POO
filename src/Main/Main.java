@@ -1,11 +1,23 @@
-/*package Main;
+package Main;
 
 import principal.*;
 import Interface.*;
 import Auxiliar.Inicializador;
 import java.util.Scanner;
 
+import javax.swing.*;
+
 public class Main {
+    public static String nome = "";  // Nome do jogador
+    public static Jogador jogador;   // Instância do Jogador
+    private static Inicial inicial;  // Painel Inicial (para acessar o JTextField)
+    private static Principal principal;
+
+    private static Tela janela = new Tela();
+    private static Inicializador inicializador = new Inicializador();
+    private static Controlador ctr = new Controlador();
+    private static Mesa Craft = ctr.criarMesa();
+    private static Inventario temp = new Inventario();
 
     // Método para adicionar um atraso entre as mensagens
     public static void delay(long millis) {
@@ -32,8 +44,56 @@ public class Main {
         System.out.println(); // Pular linha ao final
     }
 
+
+    public static void comecaJogo(String nome){
+        // Salva o nome na Main
+        Main.nome = nome;
+
+        // Cria um novo jogador
+        Main.jogador.nivelAtualCompleto();
+
+        Main.jogador.setNome(nome);
+        Main.jogador = new Jogador(1, nome, temp);
+
+        // Troca para o painel principal
+        System.out.println("Nome adicionado: " + nome);
+    }
+
+    public static void testeCraft(Item item1, Item item2){
+        Item itemProd = Craft.craftItem(jogador.getInventario(), item1.getIdItem(), item2.getIdItem(), jogador.getNivelAtual());
+        if(itemProd != null){
+            imprimeCraftado(itemProd.getNome());
+        }
+
+    }
+
+    static public void imprimeCraftado(String nome){
+        // Exibe uma mensagem caso as molduras estejam vazias
+        JOptionPane.showMessageDialog(
+                janela,
+                "Item craftado: " + nome,
+                "Craft",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+    }
+
     public static void main(String[] args) {
-        Tela janela = new Tela();
+        jogador = new Jogador(1, temp);
+
+        //inicializador.inicializaItens(temp);
+        //inicializador.inicializaReceitas(temp);
+
+        inicializador.inicializaNiveis(temp);
+
+        // Inicializa a GUI com Tela
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            inicial = (Inicial) janela.inicial; // Obtém o painel 'Inicial' da janela
+        });
+
+    }
+
+    /*public static void main(String[] args) {
+        //Tela janela = new Tela();
         Inicializador inicializador = new Inicializador();
         Controlador ctr = new Controlador();
         Mesa Craft = ctr.criarMesa();
@@ -84,7 +144,7 @@ public class Main {
                 int idItem2 = leitor.nextInt();
                 leitor.nextLine();
 
-                Craft.craftItem(jogador.getInventario(), idItem1, idItem2);
+                Craft.craftItemPadrao(jogador.getInventario(), idItem1, idItem2);
                 System.out.println("Pressione Enter para continuar...");
                 try {
                     System.out.println("Item craftado: " + Craft.getItemFinal().getNome());
@@ -99,52 +159,5 @@ public class Main {
 
         limparTela();
         escreverComEfeito("Obrigado por jogar POOcraft! Até a próxima!", 50);
-    }
-}*/
-
-package Main;
-
-import Interface.*;
-import principal.*;
-import principal.*;
-import Interface.*;
-import Auxiliar.Inicializador;
-
-import javax.swing.*;
-
-public class Main {
-    public static String nome = "";  // Nome do jogador
-    public static Jogador jogador;   // Instância do Jogador
-    private static Inicial inicial;  // Painel Inicial (para acessar o JTextField)
-    private static Principal principal;
-
-    Tela janela = new Tela();
-    private static Inicializador inicializador = new Inicializador();
-    private static Controlador ctr = new Controlador();
-    private static Mesa Craft = ctr.criarMesa();
-    private static Inventario temp = new Inventario();
-
-
-
-
-    public static void comecaJogo(String nome){
-        // Salva o nome na Main
-        Main.nome = nome;
-
-            // Cria um novo jogador
-        inicializador.inicializaItens(temp);
-        inicializador.inicializaReceitas(temp);
-        Main.jogador = new Jogador(1, nome, temp);
-
-        // Troca para o painel principal
-        System.out.println("Nome adicionado: " + nome);
-    }
-
-    public static void main(String[] args) {
-        // Inicializa a GUI com Tela
-        javax.swing.SwingUtilities.invokeLater(() -> {
-            Tela janela = new Tela(); // Cria o JFrame Tela
-            inicial = (Inicial) janela.inicial; // Obtém o painel 'Inicial' da janela
-        });
-    }
+    }*/
 }

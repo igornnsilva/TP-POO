@@ -7,9 +7,9 @@ import Main.Main;
 public class Tela extends JFrame {
     CardLayout cardLayout = new CardLayout();
     JPanel mainPanel = new JPanel(cardLayout);
-    public JPanel inicial = new Inicial();
-    public JPanel principal = new Principal();
-    public JPanel panelTrajetoria = new PanelTrajetoria();
+    public Inicial inicial = new Inicial();
+    public Principal principal = new Principal();
+    public PanelTrajetoria panelTrajetoria = new PanelTrajetoria();
 
     JButton btn1 = new JButton("Jogar");
     JButton btn2 = new JButton("Va para final");
@@ -18,9 +18,6 @@ public class Tela extends JFrame {
     public Tela() {
         // Configuração dos botões
         btn1.setBounds((getGraphicsConfiguration().getBounds().width / 2) - 70,
-                (getGraphicsConfiguration().getBounds().height / 2) + 150,
-                120, 20);
-        btn2.setBounds((getGraphicsConfiguration().getBounds().width / 2) - 70,
                 (getGraphicsConfiguration().getBounds().height / 2) + 150,
                 120, 20);
         btn3.setBounds((getGraphicsConfiguration().getBounds().width / 2) - 70,
@@ -55,6 +52,9 @@ public class Tela extends JFrame {
             if (!nome.isEmpty()) {
                 Main.comecaJogo(nome);
                 cardLayout.show(mainPanel, "principal");
+                // Atualiza os ícones no painel esquerdo (com itens do inventário)
+                principal.atualizarIconesNoPainelEsquerdo();
+                System.out.println("FOI");
             } else {
                 // Mostra mensagem caso o nome esteja vazio
                 JOptionPane.showMessageDialog(this,
@@ -66,7 +66,7 @@ public class Tela extends JFrame {
 
         // Botões para outros painéis
         btn2.addActionListener((e) -> {
-            cardLayout.show(mainPanel, "trajetoria");
+            //cardLayout.show(mainPanel, "trajetoria");
         });
 
         /*btn3.addActionListener((e) -> {

@@ -5,18 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75ffb560-d2db-47a8-b84c-c9dc972d95ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Auxiliar/Main_Teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/principal/Nivel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Inicial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Inicial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/PanelTrajetoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/PanelTrajetoria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Auxiliar/Inicializador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Auxiliar/Inicializador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Principal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Interface/Tela.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Interface/Tela.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Inicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Inicial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/Main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/principal/Inventario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/principal/Inventario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/principal/Jogador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/principal/Jogador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP-POO/principal/Mesa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP-POO/principal/Mesa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Auxiliar/Inicializador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auxiliar/Inicializador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/PanelTrajetoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/PanelTrajetoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interface/Tela.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Tela.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/principal/Inventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Inventario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/principal/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Jogador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/principal/Mesa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Mesa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +44,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -49,13 +65,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.Main.executor": "Run",
+    "Application.Main_Teste.executor": "Run",
     "Application.Tela.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Interface",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lipec/OneDrive/Documentos/GitHub/TP-POO/src/Images",
+    "last_opened_file_path": "C:/Users/lipec/Downloads/TP-POO-paratestar",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -96,6 +113,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main_Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Auxiliar.Main_Teste" />
+      <module name="TP-POO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Auxiliar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tela" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Interface.Tela" />
       <module name="TP-POO" />
@@ -111,13 +141,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Main.Main" />
+      <item itemvalue="Application.Main_Teste" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main.Main" />
       <item itemvalue="Application.Tela" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main.Main" />
+        <item itemvalue="Application.Main_Teste" />
         <item itemvalue="Application.Tela" />
         <item itemvalue="Application.Main (1)" />
       </list>
