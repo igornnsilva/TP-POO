@@ -13,7 +13,7 @@ public class Main {
     private static Inicial inicial;  // Painel Inicial (para acessar o JTextField)
     private static Principal principal;
 
-    private static Tela janela = new Tela();
+    private static Tela janela;
     private static Inicializador inicializador = new Inicializador();
     private static Controlador ctr = new Controlador();
     private static Mesa Craft = ctr.criarMesa();
@@ -78,6 +78,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        janela = new Tela();
         jogador = new Jogador(1, temp);
 
         //inicializador.inicializaItens(temp);
@@ -92,6 +93,7 @@ public class Main {
 
     }
 
+    //Main para implementacao do jogo no terminal, comentar a outra main caso for utilizar
     /*public static void main(String[] args) {
         //Tela janela = new Tela();
         Inicializador inicializador = new Inicializador();

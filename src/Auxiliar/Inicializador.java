@@ -2,6 +2,35 @@ package Auxiliar;
 import principal.*;
 
 public class Inicializador {
+
+    public void inicializaItens(Inventario inv){
+        Item temp = new Item(1, "Destilado Anão","icone1.png", true, Raridade.Comum,0);
+        inv.addItem(temp);
+        temp = new Item(2, "Cérebro de Afogado", "icone2.png", true, Raridade.Comum,0);
+        inv.addItem(temp);
+        temp = new Item(3, "Andorinha", "icone3.png", false, Raridade.Comum, 1);
+        inv.addItem(temp);
+        temp = new Item(4, "Suco de Tolete", "icone5.png", true, Raridade.Raro,0);
+        inv.addItem(temp);
+        temp = new Item(5, "Acônito", "icone3.png", true, Raridade.Comum,0);
+        inv.addItem(temp);
+        temp = new Item(6, "Poção Wiggenweld", "icone4.png", false, Raridade.Raro,1);
+        inv.addItem(temp);
+
+    }
+
+    public void inicializaReceitas(Inventario inv){
+        Receita temp = new Receita(1, 3, 1, 2);
+        Item temp2 = inv.getItem(3);
+        temp.setProduto(temp2);
+        inv.adicionarReceita(temp);
+        temp = new Receita(2, 6, 4, 5);
+        temp2 = inv.getItem(6);
+        temp.setProduto(temp2);
+        inv.adicionarReceita(temp);
+
+    }
+
     public void inicializaNiveis(Inventario inventario) {
         Nivel nivel1 = new Nivel(1); // Comum
         Nivel nivel2 = new Nivel(2); // Incomum
@@ -28,19 +57,19 @@ public class Inicializador {
         nivel1.adicionarReceita(receita1);
         nivel1.adicionarItem(swallow);
 
-        Item pocaoCuraSimples = new Item(25, "Poção de Cura Simples", "sete.jpg", true, Raridade.Comum, 11);
+        Item pocaoCuraSimples = new Item(25, "Poção de Cura Simples", "sete.jpg", false, Raridade.Comum, 11);
         Receita receita11 = new Receita(11, 25, 23, 24);
         receita11.setProduto(pocaoCuraSimples);
         nivel1.adicionarReceita(receita11);
         nivel1.adicionarItem(pocaoCuraSimples);
 
-        Item pocaoForca = new Item(27, "Poção de Força", "oito.jpg", true, Raridade.Comum, 12);
+        Item pocaoForca = new Item(27, "Poção de Força", "oito.jpg", false, Raridade.Comum, 12);
         Receita receita12 = new Receita(12, 27, 26, 24);
         receita12.setProduto(pocaoForca);
         nivel1.adicionarReceita(receita12);
         nivel1.adicionarItem(pocaoForca);
 
-        Item pocaoDefesa = new Item(28, "Poção de Defesa", "nove.jpg", true, Raridade.Comum, 13);
+        Item pocaoDefesa = new Item(28, "Poção de Defesa", "nove.jpg", false, Raridade.Comum, 13);
         Receita receita13 = new Receita(13, 28, 23, 26);
         receita13.setProduto(pocaoDefesa);
         nivel1.adicionarReceita(receita13);
@@ -147,43 +176,3 @@ public class Inicializador {
         inventario.adicionarNivel(nivel4);
     }
 }
-/*
-package Auxiliar;
-import principal. *;
-
-import java.util.ArrayList;
-import java.util.List;
-
-public class Inicializador {
-
-    public Inicializador(){
-
-    }
-    public void inicializaItens(Inventario inv){
-        Item temp = new Item(1, "Destilado Anão","icone1.png", true, Raridade.Comum,0);
-        inv.addItem(temp);
-        temp = new Item(2, "Cérebro de Afogado", "icone2.png", true, Raridade.Comum,0);
-        inv.addItem(temp);
-        temp = new Item(3, "Andorinha", "icone3.png", false, Raridade.Comum, 1);
-        inv.addItem(temp);
-        temp = new Item(4, "Suco de Tolete", "icone5.png", true, Raridade.Raro,0);
-        inv.addItem(temp);
-        temp = new Item(5, "Acônito", "icone3.png", true, Raridade.Comum,0);
-        inv.addItem(temp);
-        temp = new Item(6, "Poção Wiggenweld", "icone4.png", false, Raridade.Raro,1);
-        inv.addItem(temp);
-
-    }
-
-    public void inicializaReceitas(Inventario inv){
-        Receita temp = new Receita(1, 3, 1, 2);
-        Item temp2 = inv.getItem(3);
-        temp.setProduto(temp2);
-        inv.adicionarReceita(temp);
-        temp = new Receita(2, 6, 4, 5);
-        temp2 = inv.getItem(6);
-        temp.setProduto(temp2);
-        inv.adicionarReceita(temp);
-
-    }
-}*/

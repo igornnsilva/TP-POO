@@ -13,21 +13,19 @@ public class Tela extends JFrame {
 
     JButton btn1 = new JButton("Jogar");
     JButton btn2 = new JButton("Va para final");
-    JButton btn3 = new JButton("Va para inicial");
 
     public Tela() {
         // Configuração dos botões
         btn1.setBounds((getGraphicsConfiguration().getBounds().width / 2) - 70,
                 (getGraphicsConfiguration().getBounds().height / 2) + 150,
                 120, 20);
-        btn3.setBounds((getGraphicsConfiguration().getBounds().width / 2) - 70,
+        btn2.setBounds((getGraphicsConfiguration().getBounds().width / 2) - 70,
                 (getGraphicsConfiguration().getBounds().height / 2) + 150,
                 120, 20);
 
         // Associa botão ao painel inicial
         inicial.add(btn1);
         principal.add(btn2);
-        panelTrajetoria.add(btn3);
 
         // Paineis principais (card layout)
         mainPanel.add(inicial, "inicial");
@@ -66,12 +64,9 @@ public class Tela extends JFrame {
 
         // Botões para outros painéis
         btn2.addActionListener((e) -> {
-            //cardLayout.show(mainPanel, "trajetoria");
+            cardLayout.show(mainPanel, "trajetoria");
         });
 
-        /*btn3.addActionListener((e) -> {
-            cardLayout.show(mainPanel, "inicial");
-        });*/
     }
 
     public static void main(String[] args) {
